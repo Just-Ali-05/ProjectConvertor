@@ -9,7 +9,7 @@ const input2 = document.querySelector(".v2 input");
 let fromCurrency = valbox1.querySelector(".purple").textContent;
 let toCurrency = valbox2.querySelector(".purple").textContent;
 
-const key = "409c1456da7874d9d228d1c598aa65e8";
+const key = "9f538120a44b10b9a21543d29b03af56";
 
 const rates = (from, to) => {
     fetch(`https://api.exchangerate.host/convert?from=${from}&to=${to}&amount=1&access_key=${key}`)
