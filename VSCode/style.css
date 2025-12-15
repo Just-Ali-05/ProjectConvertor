@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px
+}
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bank{
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F6;
+    height: 50px;
+    margin: 0;
+    gap: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.bank img{
+    width: 89px;
+    height: 23px;
+    margin-right: 100px;
+}
+span{
+    text-align: center;
+    white-space: nowrap;
+    width: auto;
+    min-width: 44px;
+    height: 19px;
+    color: #000000;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 6%;
+    margin-right: 44px;
+    margin-top: 10px;
+}
+.bank span:nth-of-type(8){
+    margin-right: 0;
+}
+.log-in{
+    background-color: white;
+    color: black;
+    width: auto;
+    height: 33px;
+    padding: 0 20px;
+    margin: 10px 0 10px auto;
+}
+.p-log{
+    margin-top: 10px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 56px;
+    text-align: left;
+    width: 650px;
+    height: 32px;
+}
+.p1{
+    margin-bottom: 1px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.p2{
+    margin-bottom: 1px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.valbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+.v1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    /* gap: 10px; */
+    width: 50%;
+    height: 30px;
+}
+.v2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    /* gap: 10px; */
+    width: 50%;
+    height: 30px;
+}
+.valbox1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.valbox2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.valyuta{
+    border: 1px solid #C6C6C6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62.56px;
+    height: 28px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.valnums{
+    border: 1px solid #E5E5E5;
+    width: 253px;
+    height: 102px;
+}
+input{
+    font-size: 36px;
+    font-weight: 700;
+    width: 230px;
+    height: 66px;
+    margin-left: 14px;
+    border: none;
+}
+input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.convert1{
+    font-size: 12px;
+    font-weight: 400;
+    color: #C6C6C6;
+    margin-left: 16px;
+}
+.convert2{
+    font-size: 12px;
+    font-weight: 400;
+    color: #C6C6C6;
+    margin-left: 16px;
+}
+.white{
+    color: #9F9F9F;
+    background-color: white;
+}
+.purple{
+    color: white;
+    background-color: #833AE0;
+}
+
+@media (max-width: 768px) {
+
+    .bank {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .bank img {
+        margin-right: 20px;
+    }
+
+    span {
+        margin-right: 20px;
+        font-size: 10px;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .valbox {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .v1,
+    .v2 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .valbox1,
+    .valbox2 {
+        flex-wrap: wrap;
+    }
+
+    .valnums {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    input {
+        width: 90%;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .valyuta {
+        width: 55px;
+        height: 26px;
+        font-size: 11px;
+    }
+
+    input {
+        font-size: 24px;
+    }
+
+    .convert1,
+    .convert2 {
+        font-size: 11px;
+    }
+}
